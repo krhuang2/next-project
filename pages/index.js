@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { getHomePage } from '../lib/api'
+import { Button } from '@krhuang2/test-component-library'
 
 export default function Home({ pageData, preview }) {
   return (
@@ -16,6 +17,8 @@ export default function Home({ pageData, preview }) {
         <h1 className={styles.title}>
           {pageData.headingText}
         </h1>
+
+        <Button label={'This is a Button'} />
 
         <p className={styles.description}>
           Get started by editing{' '}
